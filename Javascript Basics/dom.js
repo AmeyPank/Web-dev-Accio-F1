@@ -12,9 +12,11 @@ console.log(paraTextContent);
 
 let heading = document.querySelector("h1")
 console.log(heading);
-heading.style.color = "red"
+heading.style.color = ""
+heading.style.textAlign = "center"
+heading.style.backgroundColor = "green"
 heading.innerText = "Changing the heading"
-heading.innerHTML = '<p>new para</p>'
+heading.innerHTML = '<p>Javascript</p>'
 let subtitle = document.querySelector(".subtitle")
 console.log(subtitle);
 let para = document.querySelector("#para")
