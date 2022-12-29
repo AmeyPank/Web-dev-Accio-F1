@@ -1,0 +1,118 @@
+/* Universal selectors : 0 specificity */
+*{
+    color: brown;
+}
+
+/* tag selectors: 1 specificity */
+p{
+    color: green;
+}
+
+/* pseudo-element selectors: 1 specificity */
+p::before{
+    content: '*';
+    color: darkgreen;
+}
+
+/* class selectors: 10 specificity */
+a.spec.spec-1{
+    color: blue;
+}
+a.spec.spec-2{
+    color: green;
+}
+a.spec.spec-3{
+    color: red;
+}
+.spec{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* pseudo-class selectors: 10 specificity */
+:hover{
+    color: green;
+}
+
+:hover{
+    color:red;
+}
+
+/* attribute selectors : 10 specificity  */
+[href="#"]{
+    color: yellow;
+}
+
+/* id selectors: 100 specificity */
+#specificity{
+    color: pink;
+}
+a#specificity{
+    color: gold;
+}
+
+/* inline css: 1000 specificity 
+!important rule: 10,000 specificity */
+
+ul li:nth-child(2n){
+    color: red;
+}
+
+::marker{
+    text-align: end!important;
+    text-align-last: end!important;
+}
+
+/* Inheritance */
+.inherit-div{
+    color: pink;
+    font-size: 20px;
+}
+
+.inherit-div h1{
+    font-size: inherit;
+    color: inherit;
+}
+
+/* box-model and box-sizing */
+.box{
+   width: 300px;
+   height: 100px;
+   border: 5px solid black;
+   box-sizing: border-box;
+    /* TRBL: 10px
+    padding: 10px;
+    margin: 10px; */
+    /* TB:10px , LR: 20px */
+    /* padding: 10px 20px; */
+    /* T: 5px, R: 4px, B: 10px, L: 15px */
+    /* margin: 5px 4px 10px 15px; */
+}
+
+.box-1{
+   width: 300px;
+   height: 100px;
+   border: 5px solid black;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+/* display: inline, block, inline-block */
+span{
+    display: block;
+}
+
+div{
+    display: inline-block;
+}
+
+.nav{
+    background-color: aliceblue;
+}
+.nav li{
+    display: inline-block;
+    padding: 5px;
+}
+
+

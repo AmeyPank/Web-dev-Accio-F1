@@ -1,0 +1,12 @@
+
+
+a:visited{
+    color: red;
+}
+a:active{
+    color: pink;
+}
+
+.box{
+    border: 1px solid black;
+}
